@@ -5,7 +5,7 @@ export const portafolioData = [
         demo:"https://vicmanuel-jiro.github.io/tiendaPatitasFelices/home",
         repo:"https://github.com/VicManuel-Jiro/tiendaPatitasFelices",
         hasdemo:"true",
-        skills: ["HTML5", "CSS3","JavaScript"]
+        skills: ["HTML5", "CSS3","JavaScript","TypeScript","GitHub"]
     }
 ];
 
