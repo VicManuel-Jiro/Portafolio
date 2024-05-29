@@ -1,6 +1,6 @@
 export const portafolioData = [
     {
-        img: "../../assets/proyectos/tiendaPF.png",
+        img: "./assets/proyectos/tiendaPF.png",
         title: "Patitas Felices",
         demo:"https://vicmanuel-jiro.github.io/tiendaPatitasFelices/home",
         repo:"https://github.com/VicManuel-Jiro/tiendaPatitasFelices",
