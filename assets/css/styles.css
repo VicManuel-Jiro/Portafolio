@@ -44,6 +44,8 @@ body {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(45deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/fondo.jpg");
+ 
+    /*background-image: url("../images/fondo.jpg");*/
 }
 
 body.dark {
@@ -174,10 +176,16 @@ header {
 }
 .about__media_stadistics{
     margin: auto;
-    padding-top: 10%;
+    padding-top: 0;
     align-items: center;
     align-content: center;
     display: block;
+}
+.stadistics{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    height: 45dvh;
 }
 .about__media_skills{
     margin: auto;
@@ -233,7 +241,6 @@ header {
 .hero__img {
     width: 30%;
     border-radius: 50%;
-    min-width: 18rem;
     animation: text__blur 1s cubic-bezier(0.55, 0.05, 0.68, 0.53) 0.3s both, 
              flotating__icon 3s ease 1.3s infinite;
 }
@@ -705,12 +712,9 @@ header {
     display: grid;
 }
 
-.about__media_stadistics{
-    margin: auto;
-    padding-top: 0;
-    align-items: center;
-    align-content: center;
-    display: block;
+
+.stadistics{
+    height: 40dvh;
 }
 .about__media_skills{
     margin: auto;
@@ -731,7 +735,7 @@ header {
    
 }
 
-@media screen and (max-width:412px){
+@media screen and (max-width:480px){
     /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////footer///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .footer__container--links{
         display: none;
@@ -759,9 +763,33 @@ header {
         font-size: 2rem;
         flex-wrap: wrap;
     }
+    /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////about///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .about__title{
+        font-size: 3rem;
+    }
+    .about__text{
+        font-size: 2.5rem;
+    }
+    .about__description{
+        font-size: 2.2rem;
+    }
+    .about__media{
+        display: flex;
+        flex-direction: column;
+    }
+    .about__img{
+        width: 100%;
+        min-width: 10rem;
+    }
+    .about__icon .bx {
+        font-size: 3rem;
+    }
+    .stadistics{
+    height: 30dvh;
+}
 }
 
-@media screen and (max-width: 395px){
+@media screen and (max-width: 320px){
 
     /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////about///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .about__title{
@@ -784,4 +812,7 @@ header {
     .about__icon .bx {
         font-size: 3rem;
     }
+    .stadistics{
+    height: 20dvh;
+}
 }

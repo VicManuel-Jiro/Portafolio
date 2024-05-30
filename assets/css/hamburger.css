@@ -3,7 +3,7 @@
   src: url(./assets/fonts/TheStudentsTeacher-Regular.ttf);
 }
 .hamburger {
-    display: none;important!
+    display: none;
     font-size: 2rem;
     margin-left: auto;
 }
