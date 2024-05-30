@@ -5,6 +5,7 @@
 .hamburger {
     display: none;important!
     font-size: 2rem;
+    margin-left: auto;
 }
 .menu {
 
@@ -45,7 +46,7 @@
 }
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
 
 .hamburger {
         display: inline-block; 
