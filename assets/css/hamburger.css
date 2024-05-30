@@ -8,7 +8,7 @@
     margin-left: auto;
 }
 .menu {
-
+    display: flex;
 }
 .menu__item{
     list-style: none ; 
