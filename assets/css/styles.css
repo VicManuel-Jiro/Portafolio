@@ -714,7 +714,7 @@ header {
 
 
 .stadistics{
-    height: 40dvh;
+    height: 30dvh;
 }
 .about__media_skills{
     margin: auto;
@@ -905,6 +905,6 @@ header {
         font-size: 3rem;
     }
     .stadistics{
-    height: 20dvh;
+    height: 15dvh;
 }
 }
