@@ -105,9 +105,7 @@ header {
     border-bottom: 2px solid var(--bg-color);
     transition: var(--transition);
 }
-.active:hover{
-     border-bottom: 2px solid var(--second-color);
-}
+
 
 .header__img {
 
