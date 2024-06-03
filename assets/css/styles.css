@@ -15,6 +15,9 @@
  */
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////global///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 :root {
+    --header1: rgba(38, 38, 38, 0.8);
+    --header2: rgba(31, 31, 31, 1);
+
     --color-card: hsl(265, 96%, 43%);
     --color-boton: hsl(217, 96%, 17%);
     --color-text: hsl(0, 0%, 15%);
@@ -25,12 +28,14 @@
     --border-radius: 2.5rem;
     --second-color: #fd8f44;
     --dark: #32012F;
+    
     --lighther-green: #76ABAE;
     --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
     --text-gradient: linear-gradient(348deg, rgba(34,31,25,0.5718662464985995) 47%, rgba(253,143,68,1) 100%);
 }
 //////////////////////////
-
+/*'Courier New', Courier, monospace;
+    margin: 0px;*/
 ////////////////////////////
 html {
    font-size: 62.5%;
@@ -84,7 +89,10 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--color-text);
+    /*background-color: var(--color-text);*/
+    background: linear-gradient( 90deg,
+    var(--header1),
+    var(--header2));
     position: fixed;
     width: 100%;
     /*padding: 1rem 1rem;*/
@@ -97,22 +105,27 @@ header {
     border-bottom: 2px solid var(--bg-color);
     transition: var(--transition);
 }
+.active:hover{
+     border-bottom: 2px solid var(--second-color);
+}
 
 .header__img {
 
-    width: 3rem;
+    width: 2.5rem;
     border-radius: 50%;
 }
 .header__link {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
+
 .header__texto {
     text-align: center;
     font-size: 1.5em;
     font-family: sans-serif, Arial;
     color: var(--bg-color);
+    margin: auto;
+    margin-left: 10px;
 }
 
 .icon_skill{

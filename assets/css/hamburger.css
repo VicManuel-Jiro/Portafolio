@@ -14,17 +14,19 @@
     list-style: none ; 
     padding-top: 16px;
     padding-bottom: 16px;
-    transition: all 1s;
+    transition: color 0.1s;
 }
+
 .panel{
     margin: 0;
 }
 
 .menu__link:hover{
-    
-        color: var(--second-color);
-        transition: all 1s;
+    color: var(--second-color);
+    transition: color 0.1s;
     }
+
+
 .menu__list {
     display: flex;
     /*justify-content: space-around;*/
