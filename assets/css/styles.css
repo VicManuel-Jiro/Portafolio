@@ -93,7 +93,10 @@ header {
     border-bottom: 1px solid var(--second-color);
 }
 
-
+.active{
+    border-bottom: 2px solid var(--bg-color);
+    transition: var(--transition);
+}
 
 .header__img {
 
