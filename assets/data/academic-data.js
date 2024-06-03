@@ -2,7 +2,7 @@ export const academicData = [
     {
         img: "./assets/academic/uaemex.png?raw=true",
         title: "Ingeniería en Computación",
-        date: "En curso - UAEMEX",
+        date: "2023 - UAEMEX",
     },
     {
         img: "./assets/academic/red_por_ciberseguridad_icon.jpg?raw=true",
