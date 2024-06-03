@@ -914,7 +914,10 @@ header {
     .stadistics{
     height: 30dvh;
 }
-
+/*////////////////////////////////////////portafolio////////////////////////////////*/
+.portafolio__title{
+    font-size: 1.9rem;
+}
 }
 
 @media screen and (max-width: 320px){
@@ -967,7 +970,7 @@ header {
 }
 /*////////////////////////////////////////portafolio////////////////////////////////*/
 .portafolio__title{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 
