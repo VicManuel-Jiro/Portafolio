@@ -13,7 +13,7 @@ export default function menuHamburger(btnHamburger, panel, menuLink){
             d.querySelector(panel).classList.remove("is-active");
             d.querySelector(btnHamburger).classList.remove("is-active");
         }
-        if(panelIsActive.classList.contains("is-active")){
+        if(panelIsActive!=null && panelIsActive.classList.contains("is-active")){
             headerBg.classList.remove("blur");
         }else{
             headerBg.classList.add("blur");
