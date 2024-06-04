@@ -4,7 +4,6 @@ export default function menuActive() {
     
         menuLinks.forEach(link => {
             link.addEventListener('click', (event) => {
-                event.preventDefault(); // Evitar el comportamiento por defecto
                 menuLinks.forEach(link => link.classList.remove('active'));
                 event.currentTarget.classList.add('active');
             });
