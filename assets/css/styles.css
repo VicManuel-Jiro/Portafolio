@@ -444,7 +444,7 @@ header {
     text-align: center;
     font-size: 3em;
     font-family: sans-serif, Arial;
-    color: var(--bg-color);
+    color: white;
     margin: 0;
 
 }
@@ -939,14 +939,7 @@ header {
     max-width: 80%;
 }
 
-.portafolio__container {
-    padding: 1rem;
-    width: 90%;
-    gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    grid-gap: 20px;
-}
+
 
 .portafolio__card {
     width: 100%;
@@ -997,9 +990,28 @@ header {
     min-width: 3rem;
     min-height: 3rem;    
 }
+/***********************************nueva seccion de proyectos*********************************************/
+.portafolio__container {
+    padding-top: 10px;
+    height: 600px;
+    width: 80%;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.portafolio__container input:checked + .card {
+    width: 100%;
+    height: 600px;
+}
+.portafolio__container input:not(:checked) + .card {
+    height: 80px;
+    width: 100%;
+}
+.card .description {
+    transform: translate(10%, 230%);
+}
 
-.icono_skill{
-    
+.portafolio__container input:checked + .card .description {
+    transform: translate(10%, 190%);
 }
 
 }
@@ -1077,6 +1089,31 @@ header {
 .portafolio__title{
     font-size: 1.9rem;
 }
+.card .description {
+    transform: translate(5%, 190%);
+}
+.portafolio__container input:checked + .card .description {
+    transform: translate(5%, 160%);
+}
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20dvh;
+    width: 40dvh;
+}
+.btn__container{
+    gap: 0;
+}
+.card .description {
+    transform: translate(10%, 230%);
+}
+
+.portafolio__container input:checked + .card .description {
+    transform: translate(10%, 190%);
+}
+
 }
 
 @media screen and (max-width: 320px){
@@ -1132,6 +1169,32 @@ header {
     font-size: 1.2rem;
 }
 
-
-
+.card .description {
+    transform: translate(5%, 190%);
+}
+.portafolio__container input:checked + .card .description {
+    transform: translate(5%, 80%);
+}
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 40dvh;
+    width: 40dvh;
+}
+.btn__container{
+    gap: 0;
+    flex-direction: column;
+}
+.card__btn{
+    margin: 0.2rem;
+}
+.description h4 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.portafolio__container{
+    margin-top: 15px;
+}
 }
