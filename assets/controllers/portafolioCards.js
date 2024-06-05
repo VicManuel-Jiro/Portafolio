@@ -30,7 +30,7 @@ const portafolioCards = portafolioData.map(
 
 
 
-            <input type="radio" name="slide" id=${data.title} checked>
+            <input type="radio" name="slide" id=${data.title} >
             <label for=${data.title} class="card" style="background-image: url(${data.img});">
                 <div class="row">
                     <div class="description">

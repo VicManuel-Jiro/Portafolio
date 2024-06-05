@@ -463,7 +463,7 @@ header {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    padding-top: 15px;
     justify-content: center;
 }
 
@@ -1011,7 +1011,7 @@ header {
 }
 
 .portafolio__container input:checked + .card .description {
-    transform: translate(10%, 190%);
+    transform: translate(10%, 160%);
 }
 
 }
@@ -1089,12 +1089,6 @@ header {
 .portafolio__title{
     font-size: 1.9rem;
 }
-.card .description {
-    transform: translate(5%, 190%);
-}
-.portafolio__container input:checked + .card .description {
-    transform: translate(5%, 160%);
-}
 .card > .row > .description {
     display: flex;
     justify-content: center;
@@ -1111,8 +1105,9 @@ header {
 }
 
 .portafolio__container input:checked + .card .description {
-    transform: translate(10%, 190%);
+    transform: translate(10%, 160%);
 }
+
 
 }
 
@@ -1173,7 +1168,7 @@ header {
     transform: translate(5%, 190%);
 }
 .portafolio__container input:checked + .card .description {
-    transform: translate(5%, 80%);
+    transform: translate(5%, 45%);
 }
 .card > .row > .description {
     display: flex;
