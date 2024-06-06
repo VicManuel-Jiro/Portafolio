@@ -43,8 +43,8 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    min-width: 0;
-    position: relative;
+    /*min-width: 0;
+    position: relative;*/
 }
 html {
    font-size: 62.5%;
@@ -56,16 +56,17 @@ html {
 body {
     margin: 0;
     width: 100%;
-    background-image: linear-gradient(45deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/fondo.jpg");
-    min-height: 100dvh;
+    height: 100%;
+    background-image: linear-gradient(360deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/fondo.jpg");
+    /*min-height: 100dvh;*/
     /*background-image: url("../images/fondo.jpg");*/
 }
-h1,h2,h3,h4{
+/*h1,h2,h3,h4{
     text-wrap:balance;
 }
 p{
     text-wrap:pretty
-}
+}*/
 body.dark {
     --bg-color: hsl(0, 0%, 15%);
     --color-text: hsl(0, 0%, 98%);
