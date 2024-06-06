@@ -19,6 +19,7 @@ export default function menuHamburger(btnHamburger, panel, menuLink){
             headerBg.classList.add("blur");
         }
     })
+    
 }
 
 
