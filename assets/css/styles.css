@@ -588,7 +588,7 @@ header {
 }
 .description h4 {
     text-transform: uppercase;
-    color: white;
+    color: gold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra de texto */
     border-radius: 0.75rem;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -662,7 +662,7 @@ header {
     display: flex;
     align-items: center;
     /*justify-content: center;*/
-    gap: 3rem;
+    /*gap: 3rem;*/
 }
 
 .card__btn {
@@ -977,7 +977,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+   /* gap: 3rem;*/
 }
 
 .card__btn {
@@ -1197,6 +1197,7 @@ header {
 }
 .card__btn{
     margin: 0.2rem;
+    margin-bottom: 10px;
 }
 .description h4 {
     margin: 0;
