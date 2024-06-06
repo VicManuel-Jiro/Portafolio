@@ -23,8 +23,8 @@ const portafolioCards = portafolioData.map(
                     </div>
                 </div>
             </label>
-            <p>height: ${screen.height}</p>
-            <p>width: ${screen.width}</p>
+            <!--<p>height: ${screen.height}</p>
+            <p>width: ${screen.width}</p>-->
  `
 ).join('');
 
