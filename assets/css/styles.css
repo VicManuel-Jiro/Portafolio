@@ -28,7 +28,7 @@
     --border-radius: 2.5rem;
     --second-color: #fd8f44;
     --dark: #32012F;
-    
+    --font:'Courier New', Courier, monospace;;
     --lighther-green: #76ABAE;
     --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
     --text-gradient: linear-gradient(348deg, rgba(34,31,25,0.5718662464985995) 47%, rgba(253,143,68,1) 100%);
@@ -123,7 +123,7 @@ header {
 .header__texto {
     text-align: center;
     font-size: 1.5em;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
     margin: auto;
     margin-left: 10px;
@@ -156,7 +156,7 @@ header {
    border-bottom: 1px solid var(--second-color);
     text-align: center;
     font-size: 3em;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
     margin: 0;
 }
@@ -164,7 +164,7 @@ header {
 .about__text {
     font-size: 3rem;
     color: var(--bg-color);
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
 }
 
 .about__description {
@@ -172,7 +172,7 @@ header {
     padding-top: 2rem;
     color: var(--bg-color);
     line-height: normal;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     padding-left: 1 rem;
     padding-right: 1rem;
 }
@@ -272,7 +272,7 @@ header {
 }
 .hero__title {
     font-size: 2.5rem;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
     margin-bottom: 0.5rem;
     animation: text__blur 1s cubic-bezier(0.55, 0.05, 0.68, 0.53) 1.5s both;
@@ -290,7 +290,7 @@ header {
 
 .hero__description {
     font-size: 2rem;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     margin-top: 1rem;
     width: 100%;
     color: var(--bg-color);
@@ -328,7 +328,7 @@ header {
 }
 .footer__link {
     font-size: 0.8rem;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
 
     color: var(--bg-color);
 }
@@ -355,14 +355,14 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     height: 100dvh;
     /*background-image: linear-gradient(45deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/fondo.jpg");*/
 }
 
 .contact__title {
     font-size: 3rem;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
     margin-bottom: 25px;
     border-bottom: 1px solid var(--second-color);
@@ -387,7 +387,7 @@ header {
 
 .form__label {
     font-size: 1rem;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
     padding-top: 0.5rem;
 }
@@ -407,7 +407,7 @@ header {
     width: 100%;
     max-width: 150px;
     align-self: center;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     background: black;
     color: white;
     padding: 0.3rem;
@@ -423,7 +423,7 @@ header {
     -webkit-animation: jello-horizontal 1s both;
     animation: jello-horizontal 1s both;
     cursor: pointer;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     transition: all 0.8s;
 }
 
@@ -443,7 +443,7 @@ header {
     border-bottom: 1px solid var(--second-color);
     text-align: center;
     font-size: 3em;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: white;
     margin: 0;
 
@@ -468,10 +468,11 @@ header {
 }
 
 .portafolio__container {
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
+    padding-top: 15px;
 }
 
 .portafolio__container input {
@@ -521,13 +522,15 @@ header {
 
 .card .description {
     opacity: 0;
-    transform: translate(20%, 190%);
+    transform: translate(20%, 270%);
     transition: opacity 0.4s ease, transform 0.4s ease;
+
+    
 }
 
 .portafolio__container input:checked + .card .description {
     opacity: 1;
-    transform: translate(20%, 160%);
+    transform: translate(20%, 170%);
     transition-delay: .4s;
     z-index: 2;
 }
@@ -586,6 +589,12 @@ header {
 .description h4 {
     text-transform: uppercase;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra de texto */
+    border-radius: 0.75rem;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /*box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);*/
+    width: fit-content;
+    font-family: var(--font);
 }
 
 /*
@@ -617,7 +626,7 @@ header {
 
 .portafolio__card h3 {
     font-size: 1.5em;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--color-text);
     margin-bottom: 1rem;
     flex-wrap: wrap;
@@ -659,14 +668,16 @@ header {
 .card__btn {
     color: var(--bg-color);
     background-color: var(--second-color);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: var(--border-radius);
     border: 1px solid var(--bg-color);
     font-size: 1rem;
-    width: 103px;
+    width: 125px;
+    height: 55px;
+    align-content: center;
     text-align: center;
     transition: .4s ease-in-out;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     margin: 0.5rem;
 }
 
@@ -720,7 +731,7 @@ header {
 .skills__title {
     text-align: center;
     font-size: 3em;
-    font-family: sans-serif, Arial;
+    font-family: var(--font);
     color: var(--bg-color);
 }
 
@@ -970,11 +981,13 @@ header {
 }
 
 .card__btn {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
-    width: 103px;
     transition: .4s ease-in-out;
     margin: 0.5rem;
+    width: 125px;
+    height: 55px;
+    align-content: center;
 }
 
 .portafolio__icons{
@@ -993,14 +1006,14 @@ header {
 /***********************************nueva seccion de proyectos*********************************************/
 .portafolio__container {
     padding-top: 10px;
-    height: 600px;
+    height: 800px;
     width: 80%;
     flex-direction: column;
     gap: 0.2rem;
 }
 .portafolio__container input:checked + .card {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 .portafolio__container input:not(:checked) + .card {
     height: 80px;
@@ -1011,7 +1024,7 @@ header {
 }
 
 .portafolio__container input:checked + .card .description {
-    transform: translate(10%, 160%);
+    transform: translate(10%, 140%);
 }
 
 }
@@ -1101,11 +1114,11 @@ header {
     gap: 0;
 }
 .card .description {
-    transform: translate(10%, 230%);
+    transform: translate(5%, 230%);
 }
 
 .portafolio__container input:checked + .card .description {
-    transform: translate(10%, 160%);
+    transform: translate(5%, 150%);
 }
 
 
