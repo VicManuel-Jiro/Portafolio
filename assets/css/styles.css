@@ -1126,8 +1126,8 @@ header {
 
 @media screen and (max-width: 320px){
     .hero {
-
-        margin-bottom: 10rem;
+        padding-top: 6rem;
+        margin-bottom: 5rem;
     }
     .hero__title{
         font-size: 1.5rem;
