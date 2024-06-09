@@ -195,8 +195,8 @@
         padding-bottom: 0;
         width: 50%;
         border-radius: 50%;
-        animation: text__blur 0.8s cubic-bezier(0.55, 0.05, 0.68, 0.53) 0.5s both, 
-                 flotating__icon 3s ease 1s infinite;
+        animation: text__blur 0.8s cubic-bezier(0.55, 0.05, 0.68, 0.53) 0.5s both;
+                 /*flotating__icon 3s ease 1s infinite;*/
     }
     .hero__media_skills{
         margin: 0;
