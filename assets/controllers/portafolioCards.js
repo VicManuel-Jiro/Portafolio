@@ -2,9 +2,9 @@ import { portafolioData, skillsData } from "../data/portafolio-data.js";
 
 export const portafolioContainer = document.querySelector(".portafolio__container");
 const portafolioCards = portafolioData.map(
-  (data) =>
+  (data, index) =>
     `
-            <input type="radio" name="slide" id=${data.title} >
+            <input type="radio" name="slide" id=${data.title} ${index === 0 ? 'checked' : ''} >
             <label for=${data.title} class="card" style="background-image: url(${data.img});">
                 <div class="row">
                     <div class="description">
@@ -17,7 +17,7 @@ const portafolioCards = portafolioData.map(
                     <div class="icons__container">
                       ${data.skills.map(skill =>`
                       <div class="icon__caja">
-                        <img class="icono_skill" src=${skillsData[skill].img} alt=${skillsData[skill].nombre} width="40" height="40"/>
+                        <img class="icono_skill" src=${skillsData[skill].img} alt=${skillsData[skill].nombre} />
                       </div>
                       `).join('')}
                     </div>

@@ -1,76 +1,35 @@
-@font-face{
-  font-family: "cuerpo";
-  src: url(./assets/fonts/TheStudentsTeacher-Regular.ttf);
-}
 .hamburger {
-    display: none;
-    font-size: 2rem;
-    margin-left: auto;
-}
+        display: inline-block; 
+    }
 .menu {
-    display: flex;
-}
+        width: auto;
+        width: 20%;
+    }
+ .nav{
+        display: flex;
+    }
 .menu__item{
     list-style: none ; 
     padding-top: 16px;
     padding-bottom: 16px;
     transition: color 0.1s;
 }
-
-.panel{
-    margin: 0;
-}
-
-.menu__link:hover{
-    color: var(--second-color);
-    transition: color 0.1s;
-    }
-
-
-.menu__list {
-    display: flex;
-    /*justify-content: space-around;*/
-    flex-wrap: wrap;
-}
-
-.menu__link {
-    
-    font-size: 1rem;
-    font-weight: 550;
-    transition: all 1s;
-    font-family: sans-serif, Arial;
-     font-style: italic;
-    padding-right: 15px;
-}
-
-.menu__link {
-    color: var(--bg-color);
-}
-
-
-@media screen and (max-width:768px) {
-
-.hamburger {
-        display: inline-block; 
-    }
-.menu {
-        width: auto;
-        width: 40%;
-    }
-
     .menu__item a {
 
         color: var(--bg-color);
-        font-weight: 400;
+        font-weight: 800;
         font-size: 2.5rem;
     }
-    
+    .menu ul{
+        padding-inline-start: 0;
+    }
     .panel {
+        display: flex;
         flex-direction: column;
         align-items: center;
         height: 100dvh;
         justify-content: center;
-        
+        margin: 0;
         background-color: black;
         width: 100%;
         position: fixed;
@@ -95,22 +54,83 @@
     .hamburger.is-active .hamburger-inner:before {
         background-color: var(--bg-color);
     }
-    
-
-}
-
-@media screen and (max-width:412px){
-
-.menu {
+@media screen and (min-width:480px){
+    .menu {
         width: auto;
         width: 30%;
     }
+    .menu__item a {
+        font-size: 3.5rem;
+    }
 }
-
-@media screen and (max-width: 395px){
-   .menu {
-        width: auto;
-        width: 20%;
+@media screen and (min-width:768px){
+    .menu {
+        width: 40%;
+    }
+    .menu__item a {
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width:1024px){
+    @keyframes slideIn {
+    0% {
+        transform: translateX(170%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        width: 60%;
+        display: flex;
+        transition: all 0.5s ease;
     }
 
+    .menu__link:hover{
+        color: var(--second-color);
+        transition: color 0.1s;
+    }
+    .menu__list {
+        display: flex;
+        /*justify-content: space-around;*/
+        flex-wrap: wrap;
+    }
+    .menu__link {
+        font-size: 1rem;
+        font-weight: 550;
+        transition: all 1s;
+        font-family: 'Courier New', Courier, monospace;
+         font-style: italic;
+        padding-right: 0;
+        margin-right: 15px;
+        color: var(--bg-color);
+        transform: translateY(-100%);
+        transition: all 0.5s ease;
+    }
+    .menu__item  {
+        padding: 0;
+
+    }
+    .menu__item a {
+        font-weight: 800;
+        font-size: 1rem;
+
+    }
+    .panel {
+        flex-direction: row;
+        align-items: center;
+        height: 2rem;
+        justify-content: right;
+        margin: 0;
+        background-color: unset;
+        width: 100%;
+        position: unset;
+        top: 0;
+        right: 0;
+        animation: slideIn 0.8s ease forwards;
+
+    }
 }
