@@ -1,7 +1,7 @@
 export const portafolioData = [
     {
         img: "./assets/proyectos/tiendaPF.png",
-        title: "Patitas Felices",
+        title: "Sitio web Patitas Felices",
         demo:"https://vicmanuel-jiro.github.io/tiendaPatitasFelices/home",
         repo:"https://github.com/VicManuel-Jiro/tiendaPatitasFelices",
         hasdemo:true,
@@ -14,6 +14,46 @@ export const portafolioData = [
         repo:"https://github.com/VicManuel-Jiro/ConsultorioDental",
         hasdemo:false,
         skills: ["Windows","Java","Oracle", "Linux" ]
+    },
+    {
+        img: "./assets/proyectos/GestorHorarioRPC.png",
+        title: "Gestor de horario con RPC",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/GestorHorarioRemotoRPC",
+        hasdemo:false,
+        skills: ["Windows","Java","Red"]
+    },
+    {
+        img: "./assets/proyectos/restauranteAgenteSockets.png",
+        title: "Autoservicio con Agentes",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/AutoservicioAgentes",
+        hasdemo:false,
+        skills: ["Windows","Java","Red"]
+    },
+    {
+        img: "./assets/proyectos/paint.png",
+        title: "Paint",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/Paint2D",
+        hasdemo:false,
+        skills: ["Windows","Java"]
+    },
+    {
+        img: "./assets/proyectos/copiaremota.png",
+        title: "Copia remota con sockets",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/copiaRemotaSockets",
+        hasdemo:false,
+        skills: ["Windows","Java","Red"]
+    },
+    {
+        img: "./assets/proyectos/simumemonru.png",
+        title: "Simulador de memoria NRU",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/SimuladorMemoriaNRU",
+        hasdemo:false,
+        skills: ["Windows","Java"]
     }
 ];
 
@@ -56,7 +96,9 @@ const skillsDataArray = [
     { nombre: "GitHub", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" ,url:"https://github.com/"},
     { nombre: "Sqlite", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" ,url:"https://sqlite.org/"},
     { nombre: "Mariadb", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg" ,url:"https://mariadb.org/"},
-    { nombre: "TechSupport", img: "assets/images/support.svg" ,url:"#"}
+    { nombre: "TechSupport", img: "assets/images/support.svg" ,url:"#"},
+    { nombre: "Red", img: "assets/images/rpc.png" ,url:"#"}
+
 ];
 
 export const skillsData = skillsDataArray.reduce((obj, item) => {
