@@ -364,18 +364,18 @@
     }
     .card .description {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         overflow: hidden;
-        height: 43%;
-        width: 100%;
+        height: 55%;
+        width: 70%;
         opacity: 0;
         transition: opacity 0.4s ease, transform 0.4s ease;
         transform: translate(5%, 240%);
     }
     .portafolio__container input:checked + .card .description {
         opacity: 1;
-        transform: translate(5%, 130%);
+        transform: translate(5%, 100%);
         transition-delay: .4s;
         z-index: 2;
     }
@@ -404,8 +404,6 @@
         display: flex;
         margin-left: auto;
         flex-direction: column;
-        margin-right: 15px;
-        margin-top: 15px;
     }
     .portafolio__container input:checked + .card .row .icons__container {
         transform: translate(-20%,0);
@@ -413,7 +411,7 @@
         display: flex;
         margin-left: auto;
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 0;
         margin-top: 15px;
         opacity: 1;
         transition-delay: .4s;
@@ -478,10 +476,10 @@
         color: navajowhite;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra de texto */
         border-radius: 0.75rem;
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        /*background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
         /*box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);*/
-        width: fit-content;
         font-family: var(--font);
+
     }
     /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////footer///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -567,7 +565,10 @@
     }
    .card > .row > .description {
         height: 43%;
-        width: 80%;
+        width: 100%;
+    }
+    .portafolio__container input:checked + .card .row .icons__container {
+        margin-right: 15px;
     }
     .btn__container{
         width: 100%;
@@ -578,7 +579,7 @@
     }
 
     .portafolio__container input:checked + .card .description {
-        transform: translate(5%, 145%);
+        transform: translate(5%, 150%);
     }
     .description h4{
         font-size: 1.3rem;
@@ -613,8 +614,12 @@
     .portafolio{
        /* min-height: 1200px;*/
     }
+    .portafolio__container input:checked + .card .description {
+        width: 80%;
+    }
     .description h4{
         font-size: 1.5rem;
+        width: 100%;
     }
     .about__title{
     font-size: 2.5rem;

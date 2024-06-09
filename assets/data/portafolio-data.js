@@ -4,8 +4,16 @@ export const portafolioData = [
         title: "Patitas Felices",
         demo:"https://vicmanuel-jiro.github.io/tiendaPatitasFelices/home",
         repo:"https://github.com/VicManuel-Jiro/tiendaPatitasFelices",
-        hasdemo:"true",
+        hasdemo:true,
         skills: ["Angular", "HTML5", "CSS3","TypeScript","MongoDB"]
+    },
+    {
+        img: "./assets/proyectos/consultorioD.png",
+        title: "Administrador de citas",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/ConsultorioDental",
+        hasdemo:false,
+        skills: ["Windows","Java","Oracle", "Linux" ]
     }
 ];
 
