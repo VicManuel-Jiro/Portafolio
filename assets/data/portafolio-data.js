@@ -16,7 +16,7 @@ export const portafolioData = [
         skills: ["Windows","Java","Oracle", "Linux" ]
     },
     {
-        img: "./assets/proyectos/gestorBienesDIDEPA",
+        img: "./assets/proyectos/gestorBienesDIDEPA.png",
         title: "Gestor de Bienes para DIDEPA",
         demo:"",
         repo:"https://github.com/VicManuel-Jiro/GestorBienesDidepa",
