@@ -9,11 +9,19 @@ export const portafolioData = [
     },
     {
         img: "./assets/proyectos/consultorioD.png",
-        title: "Administrador de citas",
+        title: "Gestor de citas",
         demo:"",
         repo:"https://github.com/VicManuel-Jiro/ConsultorioDental",
         hasdemo:false,
         skills: ["Windows","Java","Oracle", "Linux" ]
+    },
+    {
+        img: "./assets/proyectos/gestorBienesDIDEPA",
+        title: "Gestor de Bienes para DIDEPA",
+        demo:"",
+        repo:"https://github.com/VicManuel-Jiro/GestorBienesDidepa",
+        hasdemo:false,
+        skills: ["Windows","Python"]
     },
     {
         img: "./assets/proyectos/GestorHorarioRPC.png",
@@ -46,15 +54,8 @@ export const portafolioData = [
         repo:"https://github.com/VicManuel-Jiro/copiaRemotaSockets",
         hasdemo:false,
         skills: ["Windows","Java","Red"]
-    },
-    {
-        img: "./assets/proyectos/simumemonru.png",
-        title: "Simulador de memoria NRU",
-        demo:"",
-        repo:"https://github.com/VicManuel-Jiro/SimuladorMemoriaNRU",
-        hasdemo:false,
-        skills: ["Windows","Java"]
     }
+    
 ];
 
 const skillsDataArray = [
