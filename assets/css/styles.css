@@ -159,7 +159,7 @@
         justify-content: center;
 
         align-items: center;
-        height: 100dvh;
+        min-height: 100dvh;
         min-width: 100%;
         gap: 0;
     }
@@ -651,7 +651,7 @@
     }
     /*proyectos*/
     .portafolio{
-        height: 100dvh;
+        min-height: 100dvh;
     }
     .portafolio__container{
         flex-direction: row;
