@@ -127,7 +127,7 @@
         padding-left: 1rem;
         z-index: 10;
         border-bottom: 1px solid var(--second-color);
-        height: 7dvh;
+        height: 55px;
     }
     .active{
         border-bottom: 2px solid var(--bg-color);
