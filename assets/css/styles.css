@@ -49,7 +49,7 @@
         margin: 0;
         width: 100%;
         background-image: linear-gradient(0deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/fondo.jpg");
-        min-height: 100dvh;
+        min-height: 100vh;
     }
     h1,h2,h3,h4{
         text-wrap:balance;
@@ -159,7 +159,7 @@
         justify-content: center;
 
         align-items: center;
-        min-height: 100dvh;
+        min-height: 100vh;
         min-width: 100%;
         gap: 0;
     }
@@ -640,7 +640,7 @@
     .about {
         flex-direction: row;
         justify-content: center;
-        height: 100vh;
+        min-height: 100vh;
         margin-bottom: 0;
         padding-top: 0;
         align-items: center;
@@ -651,7 +651,7 @@
     }
     /*proyectos*/
     .portafolio{
-        min-height: 100dvh;
+        min-height: 100vh;
     }
     .portafolio__container{
         flex-direction: row;
